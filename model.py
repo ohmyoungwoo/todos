@@ -13,7 +13,11 @@ class Todo(BaseModel):
         cls,
         item: str = Form(...)
     ):
+        #cls.id = 1
+        #cls.item = item
+        #return cls
         return cls(item=item)
+        
 
 
     class Config:
